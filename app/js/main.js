@@ -4,7 +4,7 @@ require.config({
 	paths: {
 		angular: '../bower_components/angular/angular',
 		//angularRoute: '../bower_components/angular-route/angular-route',
-		uiRouter: '../../../angular-require-uiRouter/lib/angular/angular-ui-router',
+		uiRouter: '../bower_components/angular-route/angular-ui-router',
 		text: '../bower_components/requirejs-text/text'
 	},
 	shim: {

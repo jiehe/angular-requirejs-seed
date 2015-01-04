@@ -1,0 +1,131 @@
+@charset "utf-8";
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.yh {
+  font-family: "microsoft yahei";
+}
+.col-blue {
+  color: #1BA1E2;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.bg-body {
+  background-color: #EEE8D5 ;
+}
+.bg-article {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+body {
+  background-color: #EEE8D5 ;
+}
+#header {
+  zoom: 1;
+  text-shadow: 0 0 1px #fff;
+  height: 52px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#header .header-title {
+  color: #eee8d5;
+  text-shadow: #1ba1e2 1px 1px 0, #1ba1e2 -1px 1px 0, #1ba1e2 1px -1px 0, #1ba1e2 -1px -1px 0;
+  font-family: 'Press Start 2P', cursive, 'Microsoft YaHei', tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#header .header-title:hover {
+  text-shadow: rgba(51, 51, 51, 0.7) 10px 10px 10px;
+  color: #C40000;
+}
+#header #main-nav {
+  line-height: 3.5em;
+  font-family: "microsoft yahei";
+}
+#header #main-nav > ul > li {
+  float: left;
+  margin-left: 30px;
+}
+#header #main-nav > ul > li > a {
+  line-height: 3.5em;
+  font-size: 1.2em;
+  color: #666;
+}
+#header #main-nav > ul > li > a:hover {
+  color: #1BA1E2;
+}
+#content {
+  font-family: "microsoft yahei";
+  color: #666;
+}
+#content #wrapper {
+  width: 600px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.86);
+  padding: 20px 30px 15px 30px;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 1px 1px 3px #646464;
+}
+#content #sidebar {
+  width: 270px;
+  line-height: 1.8em;
+}
+#content #sidebar .widget {
+  background-color: rgba(255, 255, 255, 0.86);
+  -webkit-border-radius: 1px 2px 3px #dddddd;
+  -moz-border-radius: 1px 2px 3px #dddddd;
+  border-radius: 1px 2px 3px #dddddd;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+}
+#content #sidebar .widget .title {
+  padding: 15px 20px;
+  font-size: 1.3em;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+  margin: 0px;
+}
+#content #sidebar .widget .entry {
+  font-size: .9em;
+  padding: 15px 20px;
+}
+#content #sidebar #tagCloud {
+  margin: 15px 20px;
+  width: 190px;
+  height: 200px;
+}
+.inner {
+  width: 960px;
+  margin: 0px auto;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+::selection {
+  color: #fff;
+  background: #e84893;
+  text-shadow: none;
+}

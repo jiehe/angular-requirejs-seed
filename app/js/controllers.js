@@ -31,5 +31,4 @@ define(['angular', 'services'], function (angular) {
       });
     }])
 
-
 });

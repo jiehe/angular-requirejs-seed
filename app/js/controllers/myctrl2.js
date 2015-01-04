@@ -2,7 +2,6 @@ define([], function() {
 	return ['$scope', '$http', function($scope, $http) {
 		// You can access the scope of the controller from here
 		$scope.welcomeMessage = 'hey this is myctrl2.js!';
-		$scope.welcomeMessage = 'hey this is myctrl2.js!';
 		$scope.name = "lijiehe2";
 		$scope.myname = "mynameis2";
 		// because this has happened asynchroneusly we've missed

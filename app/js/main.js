@@ -6,7 +6,7 @@ require.config({
 		uiRouter: '../../../angular-require-uiRouter/lib/angular/angular-ui-router',
 		jquery:'./lib/jquery-1.9.1.min',
 		jDialog:'./lib/jDialog',
-		'jCloud':'./lib/jqcloud-1.0.4.min',
+		jCloud:'./lib/jqcloud-1.0.4.min',
 		text: '../bower_components/requirejs-text/text'
 	},
 	shim: {

@@ -1,5 +1,6 @@
 @import "../dependence/css3.less";
 @import "../dependence/common.less";
+@import "../dependence/iconfont.less";
 
 body{
   .bg-body;
@@ -99,4 +100,9 @@ body{
   color: #fff;
   background: #e84893;
   text-shadow: none;
+}
+
+div[ui-view='wrapper'] h1:before{
+  content:'\344c';
+  .iconfont;
 }

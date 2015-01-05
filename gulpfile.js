@@ -27,6 +27,21 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./app/style/dest/'));
 
 });
+gulp.task('less2', function () {
+
+  return gulp.src('./app/style/dependence/**/*.less')
+    .pipe(less())
+    .on('error', function (error) {
+      gutil.log(gutil.colors.red(error.message))
+      notifier.notify({
+        title: 'Less compilation error',
+        message: error.message
+      })
+    })
+    .pipe(gulp.dest('./app/style/dest/'));
+
+});
+
 gulp.task('minifyCss', function () {
 
   return gulp.src('./app/style/dest/**.*.css')

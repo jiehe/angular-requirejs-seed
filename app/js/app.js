@@ -4,8 +4,8 @@ define([
 	'angular',
 	'filters',
 	'services',
-	'directives',
-	'controllers',
+	'directive/index',
+	'controller/index',
 	'uiRouter',
 	], function (angular, filters, services, directives, controllers) {
 

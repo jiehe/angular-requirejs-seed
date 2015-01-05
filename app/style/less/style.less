@@ -5,6 +5,11 @@
 body{
   .bg-body;
 }
+div[ui-view="header"]{
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+}
 #header{
   zoom: 1;
   text-shadow: 0 0 1px #fff;
@@ -18,9 +23,12 @@ body{
     font-weight: normal;
     font-size: 3em;
     line-height: 1;
-    .transition(all 1s ease);
+    .transition(all 1.2s cubic-bezier(.8, 0, .25, 1));
+    transform: rotateX(45deg);
+    cursor: pointer;
     &:hover{
       text-shadow: rgba(51,51,51,0.7) 10px 10px 10px;
+      transform: rotateX(0deg);
       color:#C40000;
     }
   }

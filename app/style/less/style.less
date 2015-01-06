@@ -16,6 +16,7 @@ div[ui-view="header"]{
   height:52px;
   margin-top:30px;
   margin-bottom:30px;
+  position: relative;
   .header-title{
     color: #eee8d5;
     text-shadow: #1ba1e2 1px 1px 0,#1ba1e2 -1px 1px 0,#1ba1e2 1px -1px 0,#1ba1e2 -1px -1px 0;
@@ -23,13 +24,16 @@ div[ui-view="header"]{
     font-weight: normal;
     font-size: 3em;
     line-height: 1;
-    .transition(all 1.2s cubic-bezier(.8, 0, .25, 1));
+    transition: all 1.2s cubic-bezier(.8, 0, .25, 1),top .5s 1.2s linear;
     transform: rotateX(45deg);
+    position: relative;
     cursor: pointer;
+    top:0px;
     &:hover{
       text-shadow: rgba(51,51,51,0.7) 10px 10px 10px;
       transform: rotateX(0deg);
       color:#C40000;
+      top:25px;
     }
   }
   #main-nav{

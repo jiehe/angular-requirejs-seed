@@ -2,11 +2,11 @@
 
 define([
 	'angular',
-	'filters',
-	'services',
+	'service/index',
 	'directive/index',
 	'controller/index',
-	'uiRouter',
+	'filters',
+	'uiRouter'
 	], function (angular, filters, services, directives, controllers) {
 
 		// Declare app level module which depends on filters, and services

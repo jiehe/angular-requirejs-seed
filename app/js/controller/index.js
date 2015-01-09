@@ -3,6 +3,7 @@
 define([
     './sync/aside',
     './sync/tagArticle',
-    './sync/tagCloud'
+    './sync/tagCloud',
+    './sync/archive'
   ],
   function(){});

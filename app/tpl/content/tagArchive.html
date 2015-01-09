@@ -1,13 +1,11 @@
 <div>
-    <section class="archive-item">
-        <header>
-            <time>4月21日</time>
-
-
-
-            <h1 class="title"><a href=""></a></h1>
-
-
-        </header>
-    </section>
+    <h2 class="archive-title tag">{{archiveTitle}}</h2>
+    <div class="archives">
+        <section class="archive-item" ng-repeat="item in items">
+            <header>
+                <time datetime="2014-01-19T13:26:18.000Z" itemprop="datePublished">{{item.updateTime}}</time>
+                <h1 class="title"><a href="#/index/article/{{item.fileName}}">{{item.title}}</a></h1>
+            </header>
+        </section>
+    </div>
 </div>

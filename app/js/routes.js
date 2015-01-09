@@ -47,7 +47,8 @@ define(['angular', 'app'], function(angular, app) {
 				url:'/tagCloud/:id',
 				views:{
 					'wrapper@index': {
-						templateUrl:'app/tpl/content/tagArchive.html'
+						templateUrl:'app/tpl/content/tagArchive.html',
+						controller:'archive'
 					}
 				}
 			})

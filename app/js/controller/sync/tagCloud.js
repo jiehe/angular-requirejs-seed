@@ -14,6 +14,7 @@ define(['../controllers', 'jquery', 'jCloud'], function (controllers, $) {
 					word_list.push(obj);
 				}
 				$("#tagCloud").jQCloud(word_list);
+
 			})
 	}])
 });

@@ -23,15 +23,17 @@ if (is_dir($dir)) {
 			$end = strpos($content, '</',$start);
 			$num = $end - $start;
 			$title = substr($content, $start, $num);
-
-
 			//获取文件修改时间
 			$fmt = filemtime($filePath);
 			$date = date("Y-m-d H:i:s",$fmt);
-			$arrType[$type][] =array("title"=>$title,"updateTime"=>$date);
+			//获取文件名称前缀
+            $fileName =strstr($file,'.html',true);
+
+			$arrType[$type][] =array("title"=>$title,"updateTime"=>$date,"fileName"=>$fileName);
 		}
 
-		echo json_encode($arrType, JSON_UNESCAPED_UNICODE);
+		echo json_encode($arrType, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+//		var_dump($arrType);
 		closedir($dh);
 	}
 }

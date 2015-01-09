@@ -5,7 +5,7 @@ define([
 	'service/index',
 	'directive/index',
 	'controller/index',
-	'filters',
+	'filter/index',
 	'uiRouter'
 	], function (angular, filters, services, directives, controllers) {
 

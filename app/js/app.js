@@ -13,7 +13,7 @@ define([
 		
 		return angular.module('myApp', [
 			'ui.router',
-			//'myApp.filters',
+			'myApp.filters',
 			'myApp.services',
 			'myApp.directives',
 			'myApp.controllers'

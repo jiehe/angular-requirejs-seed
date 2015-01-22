@@ -105,16 +105,38 @@ div[ui-view="header"] {
 }
 #content {
   font-family: "microsoft yahei";
-  color: #666;
+  color: #000;
 }
 #content #wrapper {
   width: 600px;
   float: left;
-  background-color: rgba(255, 255, 255, 0.86);
+  background-color: transparent;
   padding: 20px 30px 15px 30px;
   margin-bottom: 50px;
   position: relative;
   box-shadow: 1px 1px 3px #646464;
+}
+#content #wrapper .archives {
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  -o-column-gap: 12px;
+  -ms-column-gap: 12px;
+  column-gap: 12px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  -ms-column-count: 3;
+  column-count: 3;
+}
+#content #wrapper .archives .title {
+  font-size: 14px;
+  color: #1ba1e2;
+}
+#content #wrapper .archives .archive-item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  background: #fff;
+  padding: 10px;
 }
 #content #sidebar {
   width: 270px;
@@ -159,7 +181,7 @@ div[ui-view="header"] {
   background: #e84893;
   text-shadow: none;
 }
-div[ui-view='wrapper'] h1:before {
+h1[data-anchor-id]:before {
   content: '\344c';
   font-family: "iconfont" !important;
   font-size: 36px;
@@ -168,4 +190,13 @@ div[ui-view='wrapper'] h1:before {
   -webkit-text-stroke-width: 0.2px;
   margin-right: 5px;
   color: #FF4400;
+}
+a:visited {
+  color: #1ba1e2;
+}
+a:hover {
+  color: #ff00ff;
+}
+a:active {
+  color: #ff00ff;
 }

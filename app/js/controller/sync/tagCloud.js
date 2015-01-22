@@ -1,6 +1,6 @@
 
 define(['../controllers', 'jquery', 'jCloud'], function (controllers, $) {
-	controllers.controller('tagCloud', ['$scope','archive', function($scope,archive) {
+	controllers.controller('tagCloud', ['$scope','servArchive', function($scope,servArchive) {
 		$scope.name='tagCloud';
 		//$http.get("php/openapi/getArticleName.php")
 		//	.success(function(data){
@@ -16,7 +16,7 @@ define(['../controllers', 'jquery', 'jCloud'], function (controllers, $) {
 		//		$("#tagCloud").jQCloud(word_list);
         //
 		//	})
-		archive.getData(function(data){
+		servArchive.getData(function(data){
 			var word_list = [];
 			for(i in data){
 				var obj ={

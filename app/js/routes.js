@@ -40,8 +40,14 @@ define(['angular', 'app'], function(angular, app) {
 					}
 				}
 			})
-			.state('index.archive',{
-				url:'/archive'
+			.state('index.archives',{
+				url:'/archives',
+				views:{
+					'wrapper@index': {
+						templateUrl:'app/tpl/content/allArchive.html',
+						controller:'allArchive'
+					}
+				}
 			})
 			.state('index.tagCloud',{
 				url:'/tagCloud/:id',

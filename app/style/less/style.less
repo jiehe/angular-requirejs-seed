@@ -57,15 +57,29 @@ div[ui-view="header"]{
 }
 #content{
   .yh;
-  color:#666;
+  color:#000;
   #wrapper{
     width:600px;
     .f-l;
-    .bg-article;
+    background-color: transparent;
     padding: 20px 30px 15px 30px;
     margin-bottom: 50px;
     position: relative;
     box-shadow: 1px 1px 3px rgba(100,100,100,1);
+    .archives{
+      .column-gap(12px);
+      .column-count(3);
+      .title{
+        font-size:14px;
+        color:#1ba1e2;
+      }
+      .archive-item{
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        background: #fff;
+        padding: 10px;
+      }
+    }
   }
   #sidebar{
     width: 270px;
@@ -114,7 +128,11 @@ div[ui-view="header"]{
   text-shadow: none;
 }
 
-div[ui-view='wrapper'] h1:before{
+h1[data-anchor-id]:before{
   content:'\344c';
   .iconfont;
 }
+
+a:visited {color: #1ba1e2}
+a:hover {color: #FF00FF}
+a:active {color: #FF00FF}
